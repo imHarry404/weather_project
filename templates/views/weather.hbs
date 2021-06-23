@@ -1,0 +1,50 @@
+<html lang="en">
+  {{!-- importing head from partial folder --}}
+{{>head}}
+
+  <body>
+    <!-- navbar  using grid system -->
+   {{>nav}}
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- main content area -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+
+          <div class="main_content">
+            <form class="temp_form">
+              <input type="text" id="cityName" placeholder="Enter your city Name" autocomplete="off">
+              <input type="submit" value=search id="submitBtn">
+            </form>
+          </div>
+
+          <div class="tempInformation">
+            <div class="top_layer">
+              <p id="day">Monday</p>
+              <p id="today_date">14 June</p>
+            </div>
+            <div class="main_layer ">
+              <p id="city_name">Get Output here</p>
+              <div class="middle_layer data_hide">
+                <p id="temp"><span id="temp_real_val">O</span><sup>o</sup>C</p>
+                <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+  {{>footer}}
+  {{>scripts_tag}}
+  </body>
+
+</html>

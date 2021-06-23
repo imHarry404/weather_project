@@ -1,0 +1,84 @@
+<html lang="en">
+  {{!-- importing head from partial folder --}}
+{{>head}}
+
+  <body>
+    <!-- navbar  using grid system -->
+   {{>nav}}
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- main content area -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!-- left side div -->
+            <div class="col-md-6 col-12 main_header_left">
+              <p>Welcome to weather app</p>
+              <h1>Get the latest
+                <span class="txt_clr">Weather</span>
+                Info of your city </h1>
+              <a href="/weather"><button>Check Now</button></a>
+            </div>
+            <!-- right side div -->
+            <div class="col-md-6 col-12 main_header_right">
+              <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/bg1.jpg" class="w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/bg2.jpg" class="w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/bg3.jpg" class="w-100" alt="..." />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+  {{>footer}}
+  {{>scripts_tag}}
+  </body>
+
+</html>

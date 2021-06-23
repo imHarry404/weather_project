@@ -1,0 +1,59 @@
+<html lang="en">
+  {{!-- importing head here from partials folder --}}
+{{>head}}
+ 
+
+  <body>
+    <!-- navbar  using grid system -->
+ {{>nav}}
+
+  
+    <!-- main content area -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!-- left side div -->
+            <div class="col-md-6 col-12 main_header_right">
+              <figure>
+                <img
+                  src="./images/ab.png"
+                  alt="about image"
+                  class="img-fluid"
+                  title="harry"
+                  width="70%"
+                  height="50%"
+                  title="Harry"
+                />
+              </figure>
+
+            </div>
+            <div class="col-md-6 col-12 main_header_left">
+              <p>Welcome to my ❄weather❄ app</p>
+              <h1>I am
+                <span style="color:red;text-align: end; ">Harry🥱</span>
+                <br /><span class="txt_clr">MERN stack</span>
+                <span style="color: blue;">+</span>
+                <span style="color: green;">
+                  Python🐍</span>
+                Developer🤪
+              </h1>
+              <a
+                href="https://imHarry404.github.io/harry.github.io/"
+                target="_blank"
+              ><button>About Me</button></a>
+            </div>
+            <!-- right side div -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- footer section -->
+  {{>footer}}
+  {{>scripts_tag}}
+  </body>
+
+</html>
